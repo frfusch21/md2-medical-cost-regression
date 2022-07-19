@@ -8,7 +8,7 @@ app = Flask(__name__)
 def index():
     return render_template("index.html") 
 
-@app.route("/predict1", methods=['GET', 'POST'])
+@app.route("/predict", methods=['GET', 'POST'])
 def pred():
     df = pd.DataFrame(columns=['age','sex','bmi','children','smoker','region'])
 
