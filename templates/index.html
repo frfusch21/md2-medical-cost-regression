@@ -79,19 +79,65 @@
                     <div class="divider-custom-icon"><i class="fas fa-plus"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- Contact Section Form-->
+                <!-- Prediction Form-->
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
-                        <form action="">
+                        <form action="/predict1" method="POST">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <input class="form-control" name="name" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
                                 <label for="name">Full name</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                             </div>
-                           
+
+                            <div class="form-floating mb-3">
+                                <input class="form-control" name="age" id="name" type="number" placeholder="Enter your age..." data-sb-validations="required" />
+                                <label for="name">Age</label>
+                                <div class="invalid-feedback" data-sb-feedback="age:required">Age is required.</div>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="radio" name="sex" value="0">Female
+                                <input type="radio" name="sex" value="1">Male
+                                <label for="name">Sex</label>
+                                <div class="invalid-feedback" data-sb-feedback="sex:required">Age is required.</div>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" name="bmi" id="bmi" type="number" placeholder="Enter your BMI..." data-sb-validations="required" />
+                                <label for="name">BMI</label>
+                                <div class="invalid-feedback" data-sb-feedback="bmi:required">BMI is required.</div>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input class="form-control" name="children" id="children" type="number" placeholder="Enter your children..." data-sb-validations="required" />
+                                <label for="name">Children</label>
+                                <div class="invalid-feedback" data-sb-feedback="children:required">children is required.</div>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="radio" name="smoker" value="0">No
+                                <input type="radio" name="smoker" value="1">Yes
+                                <label for="name">Smoker</label>
+                                <div class="invalid-feedback" data-sb-feedback="smoker:required">Smoker is required.</div>
+                            </div>
+                            <br>
+                            <br>
+
+                            <div class="form-floating mb-3">
+                                <input type="radio" name="region" value="0">Northeast
+                                <input type="radio" name="region" value="1">Northwest
+                                <input type="radio" name="region" value="2">Southeast
+                                <input type="radio" name="region" value="3">Southwest
+                                <label for="name">Region</label>
+                                <div class="invalid-feedback" data-sb-feedback="sex:required">Region is required.</div>
+                            </div>
+                           <br>
+                           <br>
+                           <br>
                             <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Submit</button>
+                            <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Submit</button>
                         </form>
                     </div>
                 </div>
